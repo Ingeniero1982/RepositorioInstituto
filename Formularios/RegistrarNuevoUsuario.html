@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="us">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="EstiloRegistro.css">
+    <link rel="shortcut icon" type="image/jpg" href="iconositio.jpg"/>
+    <link rel="stylesheet" href="Demo.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--se invova la hoja de estilo de fontawesome-->
+    <link rel="stylesheet" href="font/css/font-awesome.min.css">
+    
+    <title>Página Principal</title>
+</head>
+
+<body>
+
+    <div class="navigation">
+
+        <div class="items">
+            <ul>
+                <li class="category">Links de Navegación</li>
+                <li><a href="Registration-form" class="active">Inicio</a></li>
+                <li><a href="../Formularios/RegistrarNuevoUsuario.html">Registrar Usuario</a></li>
+            </ul>
+        </div>
+
+        <label for="template-select">Links de Navegación:</label>
+        <select id="template-select">
+            <optgroup label="Footers">
+                <option selected data-href="Registration-form">inicio</option>
+                <option data-href="../Formularios/RegistrarNuevoUsuario.html">Registrar Usuario</option>
+            </optgroup>
+        </select>
+
+    </div>
+
+    <!-- Se agrega el contenedor para que el formulario se centre  -->
+    <div class="container" id="FormularioRegistro" align="center">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1> <strong> ISEMED </strong></h1>
+            </div>
+            <div class="col-sm-12">
+                <h1> Formulario Para Registro de Usuarios</h1>
+                <div class="mydescription">
+                    <p>Formulario Registro diseñado con lo aprendido</p>
+                </div>
+            </div>
+        </div> <!-- Finalizacion del div correspondiente al encabezado. -->
+
+        <!--Se inicia a crear el formulario-->
+        <div class="row">
+
+            <!-- Inicia div del formulario -->
+            <div class="col-lg-8 mx-auto">
+
+                <form id="Registro" name="Registro" method="post" action="../php/InsertarRegistrarNuevo.php" class="border p-3 form">
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="nombres">Nombres</label>
+                                <input type="text" name="nombres" id="nombres" placeholder="Nombres del usuario"
+                                    class="form-control"  required>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="apellidos">Apellidos</label>
+                                <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos del usuario"
+                                    class="form-control"  required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="tipDoc">Tipo Documento</label>
+                                <select name="tipDoc" id="tipDoc" class="form-control">
+                                    <option value="Seleccioneunaopcion" select>Seleccione una opción</option>
+                                    <option value="Documento de Identidad"> Documento de Identidad</option>
+                                    <option value="Registro Civil">Registro Civil</option>
+                                    <option value="Pasaporte">Pasaporte</option>
+                                    <option value="Cedula de Extranjeria">Cédula de Extranjería</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="numdoc">Número de documento</label>
+                                <input type="text" name="numdoc" id="numdoc" placeholder="Número de documento"
+                                    class="form-control"  required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="telefono">Teléfono Contacto</label>
+                                <input type="text" name="telefono" placeholder="Teléfono Contacto" class="form-control"
+                                    id="telefono">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="Email">Email</label>
+                                <input type="text" name="Email" placeholder="Email" class="form-control" id="Email"
+                                    pattern=".*@\w{2,}\.\w{2,}" type="email" required
+                                    data-error="Por favor ingresa un correo electrónico válido">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="direccion">Dirección Residencia</label>
+                                <input type="text" name="direccion" placeholder="Dirección Residencia"
+                                    class="form-control" id="direccion"  required>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="colonia">Colonia</label>
+                                <input type="text" name="colonia" placeholder="Colonia Residencia" class="form-control"
+                                    id="colonia"  required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" name="guardar" class="btn btn-info btn-lg btn-responsive"> Registrar Usuario </button>
+                    <a href="../index.html" class="btn btn-info btn-lg btn-responsive"> Incicio </a>
+                </form>
+
+            </div>
+            <!--Finaliza div del formulario -->
+        </div> <!-- Finaliza div del row  -->
+
+    </div> <!-- Finalizacion div container -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
