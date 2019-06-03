@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="es">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="EstiloRegistro.css">
-<link rel="stylesheet" href="Demo.css">
-<link rel="shortcut icon" type="image/jpg" href="iconositio.jpg" />
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../EstiloRegistro.css">
+<link rel="stylesheet" href="../demo/Demo.css">
+<link rel="shortcut icon" type="image/jpg" href="../iconositio.jpg" />
 <script src="js/bootstrap-table-pagination.js"></script>
 <script src="js/pagination.js"></script>
 <head>  
@@ -13,26 +13,31 @@
 <body>  
 
 <div class="navigation">
+        <div class="header">
+            <h1>Instituto Carlos Roberto Flores</h1>
+            <h1>ISEMED</h1>
+            <img src="../Logo.jpg">
+        </div>
 
-<div class="items">
-    <ul>
-        <li class="category">Links de Navegación</li>
-        <li><a href="Registration-form" class="active">Inicio</a></li>
-        <li><a href="Formularios/RegistrarNuevoUsuario.html">Registrar Usuario</a></li>
-<li><a href="php/MostrarRegistros.php">Ver Usuarios Registrados</a></li>
-    </ul>
-</div>
+        <div class="items">
+            <ul>
+                <li><a href="../Formularios/RegistrarNuevoUsuario.html"
+                        class="btn btn-info btn-lg btn-responsive">Registrar Usuario</a></li>
+                <li><a href="../index.html" class="btn btn-info btn-lg btn-responsive">Inicio</a></li>
+                </li>
+            </ul>
+        </div>
 
-<label for="template-select">Links de Navegación:</label>
-<select id="template-select">
-    <optgroup label="Footers">
-        <option selected data-href="Registration-form">inicio</option>
-        <option data-href="../Formularios/RegistrarNuevoUsuario.html">Registrar Usuario</option>
-<option data-href="../php/MostrarRegistros.php">Ver Usuarios Registrados</option>
-    </optgroup>
-</select>
-
-</div>
+        <select id="template-select">
+            <optgroup label="Footers">
+                <option data-href="../Formularios/RegistrarNuevoUsuario.html" class="btn btn-info btn-lg btn-responsive">
+                </option>
+                <option data-href="../index.html" class="btn btn-info btn-lg btn-responsive">Ver Usuarios
+                    Registrados
+                </option>
+            </optgroup>
+        </select>
+    </div class="insert-post-ads1" style="margin-top:20px;">
 
 
 <div class="container-fluid table-responsive" > 

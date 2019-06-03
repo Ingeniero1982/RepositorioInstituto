@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/estiloPagina.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="EstiloRegistro.css">
-    <link rel="shortcut icon" type="image/jpg" href="iconositio.jpg"/>
     <title>Página de Inicio</title>
 
 </head>
@@ -26,8 +25,7 @@
             <ul>
                 <li><a href="Formularios/RegistrarNuevoUsuario.html"
                         class="btn btn-info btn-lg btn-responsive">Registrar Usuario</a></li>
-                <li><a href="php/MostrarRegistros.php" class="btn btn-info btn-lg btn-responsive">Ver Usuarios
-                        Registrados</a></li>
+                <li><a href="Log-in-form" class="btn btn-info btn-lg btn-responsive">Ver Usuarios Registrados</a></li>
                 </li>
             </ul>
         </div>
@@ -36,17 +34,14 @@
             <optgroup label="Footers">
                 <option data-href="Formularios/RegistrarNuevoUsuario.html" class="btn btn-info btn-lg btn-responsive">
                 </option>
-                <option data-href="php/MostrarRegistros.php" class="btn btn-info btn-lg btn-responsive">Ver Usuarios
-                    Registrados
+                <option data-href="Log-in-form" class="btn btn-info btn-lg btn-responsive">Ver Usuarios Registrados
                 </option>
             </optgroup>
         </select>
     </div class="insert-post-ads1" style="margin-top:20px;">
 
     <div class="container">
-        <iframe auto width="980" align="middle"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3869.610658346453!2d-87.15546298516558!3d14.100145990122718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6fa344a3502fb5%3A0xd19f347264b977ae!2sInstituto+Carlos+Roberto+Flores%2C+Tegucigalpa%2C+Honduras!5e0!3m2!1ses-419!2sco!4v1559526303235!5m2!1ses-419!2sco"
-            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      
 
         <div class="col-lg-12 mx-auto">
             <footer class="text-center footer-style">
@@ -59,11 +54,7 @@
                     </div>
                 </div>
             </footer>
-
         </div>
     </div>
-
 </body>
-
-
 </html>
